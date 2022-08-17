@@ -28,6 +28,11 @@ const UserSchema = {
     type: DataTypes.DATE,
     field: 'create_at',
     defaultValue: Sequelize.NOW
+  },
+  recoveryToken: {
+    allowNull: true,
+    type: DataTypes.STRING,
+    field: 'recovery_token',
   }
 }
 
